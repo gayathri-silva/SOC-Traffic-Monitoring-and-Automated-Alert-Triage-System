@@ -178,7 +178,7 @@ SOC-Traffic-Triage-System/
 
 Clone the repository:
 
-git clone https://github.com/YOUR_USERNAME/soc-traffic-triage-system.git
+git clone https://github.com/gayathri-silva/soc-traffic-triage-system.git
 
 Navigate to the project directory:
 
