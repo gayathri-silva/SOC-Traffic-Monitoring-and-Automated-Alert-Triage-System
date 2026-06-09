@@ -1,0 +1,14 @@
+{
+    "alert_id": "SOC-22F2AC01",
+    "alert_type": "Suspicious Network Volume",
+    "indicator_type": "ip",
+    "indicator_value": "192.168.56.102",
+    "destination_host": "Internal-server",
+    "destination_ip": "192.168.56.101",
+    "evidence": {
+        "packet_count": 50,
+        "time_window_seconds": 100,
+        "data_source": "traffic.pcap"
+    },
+    "analyst_question": "Is this expected activity or suspicious scanning/noise?"
+}
