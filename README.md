@@ -154,15 +154,15 @@ Result:
 
 SOC-Traffic-Triage-System/
 
-├── analyzer.py
+├── Junior_SOC_Analyst.py
 
 ├── README.md
 
-├── requirements.txt
+├── traffic.csv
 
-├── sample_alert.json
+├── alert.json
 
-├── screenshots/
+├── project screenshots.pdf
 
 │   ├── capture.png
 
@@ -170,7 +170,7 @@ SOC-Traffic-Triage-System/
 
 │   └── output.png
 
-└── .gitignore
+└── traffic.pcap
 
 ---
 
