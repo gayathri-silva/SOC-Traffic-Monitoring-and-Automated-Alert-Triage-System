@@ -1,4 +1,4 @@
-# SOC Traffic Monitoring and Automated Alert Triage System
+ # SOC Traffic Monitoring and Automated Alert Triage System
 
 ## Overview
 
@@ -147,39 +147,10 @@ Result:
 * Suspicious activity detected
 * Alert generated
 * Alert submitted for triage
-
----
-
-## Project Structure
-
-SOC-Traffic-Triage-System/
-
-├── Junior_SOC_Analyst.py
-
-├── README.md
-
-├── traffic.csv
-
-├── alert.json
-
-├── project screenshots.pdf
-
-│   ├── capture.png
-
-│   ├── alert.png
-
-│   └── output.png
-
-└── traffic.pcap
-
 ---
 
 ## Installation
-
-Clone the repository:
-
-git clone https://github.com/gayathri-silva/soc-traffic-triage-system.git
-
+ 
 Navigate to the project directory:
 
 cd soc-traffic-triage-system
