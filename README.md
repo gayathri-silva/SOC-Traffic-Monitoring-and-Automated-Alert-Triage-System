@@ -227,13 +227,4 @@ Through this project, I gained practical experience in:
 * SOC triage workflows
 * Cybersecurity automation
 * Incident detection and response concepts
-
----
-
-## Author
-
-Gayathri Silva
-
-BSc (Hons) Information Technology – Cyber Security
-
-Sri Lanka Institute of Information Technology (SLIIT)
+ 
