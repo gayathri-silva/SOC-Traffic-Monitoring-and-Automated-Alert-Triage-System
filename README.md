@@ -31,30 +31,74 @@ The system uses TShark for packet capture, Python for traffic analysis, and an A
 
 ## Project Architecture
 
-Ubuntu VM (Traffic Generator)
-|
-| ICMP Traffic
-v
-Kali Linux VM (Monitoring System)
-|
-| TShark Packet Capture
-v
-traffic.pcap
-|
-v
-Traffic Analysis
-|
-v
-Alert Generation
-|
-v
-alert.json
-|
-v
-AI SOC Triage Engine
-|
-v
-Risk Assessment & Recommendations
+```text
++------------------------+
+| Ubuntu VM              |
+| (Traffic Generator)    |
++-----------+------------+
+            |
+            | ICMP Ping Traffic
+            v
++------------------------+
+| Kali Linux VM          |
+| (Monitoring System)    |
++-----------+------------+
+            |
+            | TShark Packet Capture
+            v
++------------------------+
+| traffic.pcap           |
+| Raw Network Packets    |
++-----------+------------+
+            |
+            | Convert to CSV
+            v
++------------------------+
+| traffic.csv            |
+| Parsed Packet Data     |
++-----------+------------+
+            |
+            | Python Analysis
+            v
++------------------------+
+| Traffic Analyzer       |
+| Packet Counting        |
+| Threshold Detection    |
++-----------+------------+
+            |
+            | Generate Alert
+            v
++------------------------+
+| alert.json             |
+| Security Alert         |
++-----------+------------+
+            |
+            | API Request
+            v
++------------------------+
+| AI SOC Triage Engine   |
+| Risk Assessment        |
+| Threat Classification  |
+| MITRE Mapping          |
++-----------+------------+
+            |
+            v
++------------------------+
+| SOC Investigation      |
+| Recommended Actions    |
++------------------------+
+```
+
+### Workflow Summary
+
+1. Ubuntu VM generates ICMP traffic by sending ping requests.
+2. Kali Linux captures the network packets using TShark.
+3. Captured packets are stored in a PCAP file.
+4. The PCAP file is converted into CSV format for analysis.
+5. Python analyzes the traffic and counts packets from each source IP.
+6. If traffic exceeds the configured threshold, a security alert is generated.
+7. The alert is stored as a JSON file and sent to the AI SOC Triage Engine.
+8. The triage engine performs threat classification, risk scoring, and recommends response actions.
 
 ---
 
